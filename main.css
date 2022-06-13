@@ -1,1 +1,45 @@
-/* write styles here */
+/* icon link: https://static-exp2.licdn.com/sc/h/cwn0a0e7hog2i33c88ucrvot5 */
+/* profile-background link: https://static-exp2.licdn.com/sc/h/55k1z8997gh8dwtihm11aajyq */
+
+body {
+    font-size: 18px;
+}
+nav {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    padding: 5px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: grey;
+    padding: 10px;
+}
+
+.me {
+    position: relative;
+    
+}
+
+.dropdown {
+    padding: 1em;
+    position: relative;
+    list-style-type: none;
+}
+
+.subitem {
+    text-align: center
+}
