@@ -1,6 +1,6 @@
 /* icon link: https://static-exp2.licdn.com/sc/h/cwn0a0e7hog2i33c88ucrvot5 */
 /* profile-background link: https://static-exp2.licdn.com/sc/h/55k1z8997gh8dwtihm11aajyq */
-
+/* indeed logo: https://static-exp2.licdn.com/sc/h/akt4ae504epesldzj74dzred8 */
 body {
     font-size: 18px;
 }
@@ -42,4 +42,144 @@ nav a {
 
 .subitem {
     text-align: center
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;    
+    gap: 10px 20px;
+    width: 90%;
+}
+
+/* I get really confused on which parent needs flex, and what gets inherited */
+.profile-content.all{
+    position: flex;
+    width: 66%;
+}
+.profile-content-main, .analytics, .edit-profile, .ad, .people-also-viewed, .network-links p{
+    position: flex;
+    border: .01px solid grey;
+    border-radius: 5px;
+    margin-top:5px;
+    padding: .5rem;
+    
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
+#main-photo {
+    border: .1rem solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: 270px;
+    width: 10vw;
+}
+
+#mini-main-photo {
+    border: .05rem solid white;
+    border-radius: 50%;
+    width: 5vw;
+}
+.main-content {
+    padding: 1rem;
+    margin-top: 1.5rem;
+}
+.background-photo {
+    position: relative;
+}
+
+#camera {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+/*
+.main-content, .main-job, .profile-buttons { /* why aren't main-content and main-job going side by side? */
+   /* width: 48%; */
+   /* position: inline-block; wasn't being applied 
+}
+*/
+
+
+.profile-content-main {
+    position: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#pencil {
+    position: absolute;
+    top: 2px;
+    right: 5px;
+}
+
+#blurry {
+    display: inline;
+}
+
+h2 {
+    font-weight: 200px; /* devtools shows this isn't being applied */
+    font-size: 20px;
+}
+
+.main-job h2 {
+    display: inline-block;
+}
+
+span {
+    display: block;
+}
+
+.button {
+    border: grey 0.1em solid;
+    border-radius: 40%;
+    color: grey;
+    text-decoration: none;
+    font-weight: 300px; /* not being applied */
+    padding: 0.4rem 0.6rem;
+    margin: 0.5rem;
+}
+
+.network-links p {
+    width: 48%;
+    display: inline-block;
+    height: 100px;
+    margin: 3px;
+    padding: .7rem;
+}
+
+.network-links p a {
+    display: block;
+    text-decoration: none;
+    color: blue;
+    font-weight: 400px;
+    margin:0;
+}
+
+.question-mark {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+br {
+    width: 80%;
+}
+.edit-profile-url, .add-profile-language {
+    position: relative;
+    padding: 1rem;
+}
+
+.people-also-viewed h4 {
+    display: inline-block;
+    font-weight: 400px;
+}
+.people-also-viewed h4+span, .people-also-viewed img {
+    display:inline-block;
+    margin: .5rem;
 }
